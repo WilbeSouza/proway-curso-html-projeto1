@@ -1,0 +1,42 @@
+/* Estilo geral da página */
+body {
+    background-color: #f0f0f0; /* Fundo de cor cinza clara */
+    font-family: Serif, sans-serif; /* Fonte da página */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover padding padrão */
+    display: flex; /* Usar flexbox para centralizar os elementos */
+    flex-direction: column; /* Organiza os elementos de forma vertical */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Garantir que a página ocupe toda a altura da tela */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilo do título principal */
+  h1 {
+    color: #29db1f; /* Cor do título */
+    margin-top: 20px; /* Espaço acima do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-size: 3rem; /* Tamanho maior do título */
+  }
+  
+  /* Estilo do subtítulo */
+  h2 {
+    color: #555; /* Cor do subtítulo */
+    margin-bottom: 40px; /* Espaço abaixo do subtítulo */
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+  }
+  
+  /* Estilo do formulário */
+  form {
+    background-color: rgb(111, 161, 126); /* Cor de fundo para o formulário */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.1); /* Sombra suave para o formulário */
+    width: 100%; /* Largura total */
+    max-width: 350px; /* Máxima largura do formulário */
+  }
+  
+  /* Estilo para os campos de input */
+  input[type="email"], input[type="password"]
+  
