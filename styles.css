@@ -1,42 +1,53 @@
 /* Estilo geral da página */
-body {
-    background-color: #f0f0f0; /* Fundo de cor cinza clara */
+body 
+    {
+    background-color: #e90b0b; /* Cor de fundo de fallback (usada caso a imagem de fundo não carregue) */
+    
+    /* --- ALTERAÇÕES PARA INSERIR UMA IMAGEM DE FUNDO --- */
+    background-image: url('https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?semt=ais_hybrid&w=740'); /* Define a imagem de fundo (substitua 'imagem.jpg' pelo caminho real da imagem) */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela proporcionalmente */
+    background-position: center; /* Centraliza a imagem no corpo da página */
+    background-repeat: no-repeat; /* Evita que a imagem se repita em mosaico */
+    /* ---------------------------------------------------- */
+    
     font-family: Serif, sans-serif; /* Fonte da página */
-    margin: 0; /* Remover margens padrão */
-    padding: 0; /* Remover padding padrão */
-    display: flex; /* Usar flexbox para centralizar os elementos */
-    flex-direction: column; /* Organiza os elementos de forma vertical */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    height: 100vh; /* Garantir que a página ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    display: flex; /* Usa flexbox para centralizar os elementos */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos no eixo vertical */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+    height: 100vh; /* Define a altura da página como 100% da altura da tela */
     text-align: center; /* Centraliza o texto */
+
   }
   
   /* Estilo do título principal */
   h1 {
-    color: #29db1f; /* Cor do título */
+    color: #000000; /* Cor do título */
     margin-top: 20px; /* Espaço acima do título */
     margin-bottom: 10px; /* Espaço abaixo do título */
-    font-size: 3rem; /* Tamanho maior do título */
+    font-size: 7rem; /* Tamanho maior do título */
+    text-shadow: 0 6px 10px rgba(255, 255, 255, 0.89);
   }
   
   /* Estilo do subtítulo */
   h2 {
-    color: #555; /* Cor do subtítulo */
+    color: #ffffff; /* Cor do subtítulo */
     margin-bottom: 40px; /* Espaço abaixo do subtítulo */
     font-size: 1.5rem; /* Tamanho do subtítulo */
   }
   
   /* Estilo do formulário */
   form {
-    background-color: rgb(111, 161, 126); /* Cor de fundo para o formulário */
+    background-color: rgb(0, 0, 0); /* Cor de fundo para o formulário */
     padding: 30px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(254, 254, 254, 0.1); /* Sombra suave para o formulário */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.89); /* Sombra suave para o formulário */
     width: 100%; /* Largura total */
-    max-width: 350px; /* Máxima largura do formulário */
+    max-width: 200px; /* Máxima largura do formulário */
+    color:rgb(253, 253, 253)
   }
   
   /* Estilo para os campos de input */
   input[type="email"], input[type="password"]
-  
