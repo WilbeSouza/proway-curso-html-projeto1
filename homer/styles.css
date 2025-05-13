@@ -1,0 +1,134 @@
+/* Estilo geral da página */
+body {
+    background-color: #e90b0b; /* Cor de fundo de fallback (usada caso a imagem de fundo não carregue) */
+    
+    /* --- ALTERAÇÕES PARA INSERIR UMA IMAGEM DE FUNDO --- */
+    background-image: url('https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?semt=ais_hybrid&w=740'); /* Define a imagem de fundo (substitua 'imagem.jpg' pelo caminho real da imagem) */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela proporcionalmente */
+    background-position: center; /* Centraliza a imagem no corpo da página */
+    background-repeat: no-repeat; /* Evita que a imagem se repita em mosaico */
+    /* ---------------------------------------------------- */
+    
+    font-family: Serif, sans-serif; /* Fonte da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    display: flex; /* Usa flexbox para centralizar os elementos */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: flex; /* Centraliza os elementos no eixo vertical */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+    height: 100vh; /* Define a altura da página como 100% da altura da tela */
+    text-align: flex; /* Centraliza o texto */
+
+  }
+
+/* Link de voltar */
+.voltar {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.voltar img {
+  margin-right: 8px;
+}
+
+/* Título principal */
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Container que agrupa os filmes */
+.filmes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Cada filme */
+.filme {
+  background-color: #000000;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #ffffff;
+  transition: transform 0.3s;
+}
+
+.filme:hover {
+  transform: scale(1.03);
+}
+
+/* Capa do filme */
+.capa {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+/* Área de informações */
+.info {
+  padding: 15px;
+}
+
+/* Título do filme */
+.titulo-filme {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Sinopse */
+.sinopse {
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Botão de comprar */
+.botao-comprar {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Botão de Assistir */
+.botao-assistir {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao-comprar:hover {
+  background-color: #ff1e28;
+}
+/* Garante que a largura do bloco de info seja igual à da imagem */
+.filme {
+  width: 100%;
+  max-width: 250px; /* Limita o tamanho do filme para alinhar imagem e texto */
+  margin: auto;
+}
+
+/* Garante que o texto quebre corretamente */
+.info {
+  padding: 15px;
+  word-wrap: break-word; /* quebra palavras muito longas */
+  width: 100%;           /* ocupa toda a largura do container */
+  box-sizing: border-box;
+}
+
+/* Ajuste opcional para a imagem acompanhar a largura do container */
+.capa {
+  width: 100%;
+  height: auto;
+  display: block;
+}

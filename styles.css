@@ -1,8 +1,6 @@
 /* Estilo geral da página */
 body 
     {
-    background-color: #e90b0b; /* Cor de fundo de fallback (usada caso a imagem de fundo não carregue) */
-    
     /* --- ALTERAÇÕES PARA INSERIR UMA IMAGEM DE FUNDO --- */
     background-image: url('https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?semt=ais_hybrid&w=740'); /* Define a imagem de fundo (substitua 'imagem.jpg' pelo caminho real da imagem) */
     background-size: cover; /* Faz com que a imagem cubra toda a tela proporcionalmente */
@@ -34,8 +32,8 @@ body
   /* Estilo do subtítulo */
   h2 {
     color: #ffffff; /* Cor do subtítulo */
-    margin-bottom: 40px; /* Espaço abaixo do subtítulo */
-    font-size: 1.5rem; /* Tamanho do subtítulo */
+    margin-bottom: 30px; /* Espaço abaixo do subtítulo */
+    font-size: 2rem; /* Tamanho do subtítulo */
   }
   
   /* Estilo do formulário */
@@ -44,10 +42,33 @@ body
     padding: 30px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.89); /* Sombra suave para o formulário */
-    width: 100%; /* Largura total */
+    width: 200%; /* Largura total */
     max-width: 200px; /* Máxima largura do formulário */
     color:rgb(253, 253, 253)
+    
   }
   
+  .botoes-login {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Estilo para os links que parecem botões */
+.btn {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;   /* Remove o sublinhado */
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #080808;
+ 
+}
   /* Estilo para os campos de input */
   input[type="email"], input[type="password"]
