@@ -1,13 +1,13 @@
 /* Estilo geral da página */
-body 
-    {
+body {
+    background-color: #e90b0b; /* Cor de fundo de fallback (usada caso a imagem de fundo não carregue) */
+    
     /* --- ALTERAÇÕES PARA INSERIR UMA IMAGEM DE FUNDO --- */
     background-image: url('https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?semt=ais_hybrid&w=740'); /* Define a imagem de fundo (substitua 'imagem.jpg' pelo caminho real da imagem) */
     background-size: cover; /* Faz com que a imagem cubra toda a tela proporcionalmente */
     background-position: center; /* Centraliza a imagem no corpo da página */
     background-repeat: no-repeat; /* Evita que a imagem se repita em mosaico */
     /* ---------------------------------------------------- */
-    
     font-family: Serif, sans-serif; /* Fonte da página */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove espaçamentos internos padrão */
@@ -19,8 +19,30 @@ body
     text-align: center; /* Centraliza o texto */
 
   }
-  
-  /* Estilo do título principal */
+
+/* Link de voltar */
+.voltar {
+  position: fixed; /* ou use absolute se preferir dentro de um container */
+  top: 20px;       /* distância do topo */
+  left: 20px;      /* distância da esquerda */
+  text-decoration: none;
+  color: #000;
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 1000; /* garante que fique acima de outros elementos */
+}
+
+.voltar img {
+  vertical-align: middle;
+}
+
+/* Estilo do título principal */
   h1 {
     color: #000000; /* Cor do título */
     margin-top: 20px; /* Espaço acima do título */
@@ -42,7 +64,7 @@ body
     padding: 30px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.89); /* Sombra suave para o formulário */
-    width: 200%; /* Largura total */
+    width: 300%; /* Largura total */
     max-width: 200px; /* Máxima largura do formulário */
     color:rgb(253, 253, 253)
     
