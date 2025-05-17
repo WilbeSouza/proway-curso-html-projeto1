@@ -9,32 +9,23 @@
   </head>
 
   <body>
-    <!-- Link para voltar à página inicial -->
-    <a href="/index.html" class="voltar">
+    <a href="../index.html" class="voltar">
       <img src="../1.png" width="20" alt="Ícone" /> Voltar
     </a>
 
-    <!-- Título da página -->
     <h1 class="titulo">Catálogo de Filmes</h1>
 
-    <!-- Container principal que agrupa todos os filmes -->
     <div class="filmes-container">
-      <!-- Bloco de filme (repita 6 vezes com diferentes dados) -->
-      <!------------------------------------------------>
       <div class="filme">
-        <!-- Capa do filme -->
         <img
           src="https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_FMjpg_UX1000_.jpg"
           alt="Capa do Filme"
           class="capa"
         />
-
-        <!-- Informações do filme -->
-
         <div class="info">
           <h2 class="titulo-filme">O Hobbit - Uma Jornada Inesperada</h2>
           <div>
-             <button class="botao-assistir">Trailer</button>
+            <button class="botao-assistir">Trailer</button>
           </div>
         </div>
       </div>
@@ -45,7 +36,6 @@
           alt="Capa do Filme"
           class="capa"
         />
-
         <div class="info">
           <h2 class="titulo-filme">O Hobbit - A Desolação de Smaug</h2>
           <div>
@@ -60,13 +50,12 @@
           alt="Capa do Filme"
           class="capa"
         />
-
         <div class="info">
           <h2 class="titulo-filme">
             O Hobbit - A Batalha dos Cincos Exercitos
           </h2>
           <div>
-           <button class="botao-assistir">Trailer</button>
+            <button class="botao-assistir">Trailer</button>
           </div>
         </div>
       </div>
@@ -77,10 +66,8 @@
           alt="Capa do Filme"
           class="capa"
         />
-
         <div class="info">
           <h2 class="titulo-filme">O senhor dos Aneis - A sociedade do anel</h2>
-
           <div>
             <button class="botao-assistir">Trailer</button>
           </div>
@@ -93,12 +80,10 @@
           alt="Capa do Filme"
           class="capa"
         />
-
         <div class="info">
           <h2 class="titulo-filme">O senhor dos Aneis - As Duas Torres</h2>
-
           <div>
-           <button class="botao-assistir">Trailer</button>
+            <button class="botao-assistir">Trailer</button>
           </div>
         </div>
       </div>
@@ -112,82 +97,112 @@
         <div class="info">
           <h2 class="titulo-filme">O senhor dos Aneis - O Retorno do Rei</h2>
           <div>
-             <button class="botao-assistir">Trailer</button>
+            <button class="botao-assistir">Trailer</button>
           </div>
         </div>
       </div>
     </div>
-        <a href="/cad-filme/cad-filme.html">
-        <button type="button" class="botao-cad-filmes">Cadastro de Filmes</button>
-              <!-- Modal para trailer -->
-               
-    <div id="trailerModal" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.9); align-items:center; justify-content:center;">
-      <div style="position:relative; width:90%; max-width:900px;">
-        <span id="closeModal" style="position:absolute; top:-20px; right:-20px; font-size:50px; color:white; cursor:pointer;">&times;</span>
-        <iframe id="trailerFrame" width="100%" height="500" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        
+
+    <a href="../cad-filme/cad-filme.html">
+      <button type="button" class="botao-cad-filmes">Cadastro de Filmes</button>
+    </a>
+
+    <!-- Modal para trailer -->
+    <div
+      id="trailerModal"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div style="position: relative; width: 90%; max-width: 900px">
+        <span
+          id="closeModal"
+          style="
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+          "
+          >&times;</span
+        >
+        <iframe
+          id="trailerFrame"
+          width="100%"
+          height="500"
+          src=""
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
 
     <script>
-      const botoes = document.querySelectorAll('.botao-assistir');
-      const modal = document.getElementById('trailerModal');
-      const iframe = document.getElementById('trailerFrame');
-      const fechar = document.getElementById('closeModal');
+      const botoes = document.querySelectorAll(".botao-assistir");
+      const modal = document.getElementById("trailerModal");
+      const iframe = document.getElementById("trailerFrame");
+      const fechar = document.getElementById("closeModal");
 
-      // Trailers em alta qualidade (YouTube)
       const trailers = [
-        "https://www.youtube.com/embed/SDnYMbYB-nU?autoplay=1&vq=hd1080", // Hobbit 1
-        "https://www.youtube.com/embed/OPVWy1tFXuc?autoplay=1&vq=hd1080", // Hobbit 2
-        "https://www.youtube.com/embed/iVAgTiBrrDA?autoplay=1&vq=hd1080", // Hobbit 3
-        "https://www.youtube.com/embed/V75dMMIW2B4?autoplay=1&vq=hd1080", // Sociedade do Anel
-        "https://www.youtube.com/embed/hYcw5ksV8YQ?autoplay=1&vq=hd1080", // Duas Torres
-        "https://www.youtube.com/embed/r5X-hFf6Bwo?autoplay=1&vq=hd1080", // Retorno do Rei
+        "https://www.youtube.com/embed/SDnYMbYB-nU?autoplay=1&vq=hd1080",
+        "https://www.youtube.com/embed/OPVWy1tFXuc?autoplay=1&vq=hd1080",
+        "https://www.youtube.com/embed/iVAgTiBrrDA?autoplay=1&vq=hd1080",
+        "https://www.youtube.com/embed/V75dMMIW2B4?autoplay=1&vq=hd1080",
+        "https://www.youtube.com/embed/hYcw5ksV8YQ?autoplay=1&vq=hd1080",
+        "https://www.youtube.com/embed/r5X-hFf6Bwo?autoplay=1&vq=hd1080",
       ];
 
       botoes.forEach((botao, index) => {
-        botao.addEventListener('click', () => {
+        botao.addEventListener("click", () => {
           iframe.src = trailers[index];
-          modal.style.display = 'flex';
+          modal.style.display = "flex";
         });
       });
 
-      fechar.addEventListener('click', () => {
-        modal.style.display = 'none';
-        iframe.src = ""; // Para o vídeo
+      fechar.addEventListener("click", () => {
+        modal.style.display = "none";
+        iframe.src = "";
       });
 
-      window.addEventListener('click', (e) => {
+      window.addEventListener("click", (e) => {
         if (e.target === modal) {
-          modal.style.display = 'none';
+          modal.style.display = "none";
           iframe.src = "";
         }
       });
     </script>
-        <script>
-  const trailerModal = document.getElementById('trailerModal');
-  const trailerFrame = document.getElementById('trailerFrame');
-  const closeModal = document.getElementById('closeModal');
 
-  // Fecha o modal ao clicar no X
-  closeModal.addEventListener('click', function(event) {
-    event.stopPropagation();   // Evita que o clique suba e dispare outro evento
-    event.preventDefault();    // Evita qualquer comportamento padrão (ex: seguir link)
-    trailerModal.style.display = 'none';
-    trailerFrame.src = '';     // Para o vídeo
-  });
+    <script>
+      const trailerModal = document.getElementById("trailerModal");
+      const trailerFrame = document.getElementById("trailerFrame");
+      const closeModal = document.getElementById("closeModal");
 
-  // Opcional: fecha o modal clicando fora da caixa de vídeo
-    trailerModal.addEventListener('click', function(event) {
-    if (event.target === trailerModal) {
-      event.stopPropagation();
-      event.preventDefault();
-      trailerModal.style.display = 'none';
-      trailerFrame.src = '';
-    }
-  });
-</script>
+      closeModal.addEventListener("click", function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        trailerModal.style.display = "none";
+        trailerFrame.src = "";
+      });
 
-      
+      trailerModal.addEventListener("click", function (event) {
+        if (event.target === trailerModal) {
+          event.stopPropagation();
+          event.preventDefault();
+          trailerModal.style.display = "none";
+          trailerFrame.src = "";
+        }
+      });
+    </script>
   </body>
 </html>
