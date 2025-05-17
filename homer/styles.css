@@ -44,6 +44,27 @@ body {
   vertical-align: middle;
 }
 
+.botao-cad-filmes {
+  position: fixed; /* ou use absolute se preferir dentro de um container */
+  top: 65px;       /* distância do topo */
+  left: 20px;      /* distância da esquerda */
+  text-decoration: none;
+  color: #000;
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+}
+
+.botao-cad-filmes {
+  vertical-align: middle;
+}
+
 /* Título principal */
 .titulo {
   text-align: center;

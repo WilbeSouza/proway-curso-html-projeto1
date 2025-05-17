@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locadora</title>
+    <link rel="icon" type="image/png" href="../2.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Link para voltar à página inicial -->
+    <a href="/homer/homer.html" class="voltar">
+      <img src="../1.png" width="20" alt="Ícone" /> Voltar
+    </a>
+    <br />
+    <form action="index.html" method="get">
+      <div>
+        <label for="campo-nome">Filme</label>
+        <input type="text" id="campo-filme" required name="filme" />
+      </div>
+      <br>
+      <div>
+        <label for="campo-genero">Gênero</label>
+        <select required name="genero">
+          <option>Ação</option>
+          <option>Comédia</option>
+          <option>Ficção Científica</option>
+          <option>Fantasia</option>
+          <option>Suspense</option>
+          <option>Guerra</option>
+          <option>Faroeste</option>
+        </select>
+      </div>
+      <div>
+        <label for="campo-categoria">Estudio</label>
+        <select id="campo-categoria" name="categoria" required>
+          <option value="1">Estúdios Disney</option>
+          <option value="2">Warner Bros.</option>
+          <option value="3">Universal </option>
+          <option value="4">Paramount </option>
+          <option value="5">Sony </option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="campo-duração">Duração</label>
+        <input
+          type="number"
+          step="0.3"
+          id="campo-duracao"
+          name="duracao"
+          required
+        />
+        
+      </div>
+      
+      <div>
+        <label>Postar</label>
+        <div>
+          <input
+            type="radio"
+            id="campo-postar-sim"
+            name="postar"
+            value="true"
+          />
+          <label for="campo-postar-sim">Sim</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="campo-postar-nao"
+            name="postar"
+            value="false"
+          />
+          <label for="campo-postar-nao">Não</label>
+        </div>
+      </div>
+        <div>
+          <a href="/homer/homer.html">
+          <button type="button" class="botao-cad-filmes">Cadastrar</button>
+        </div>
+
+      <a href="/Lista-filmes/lista-filmes.html">
+        <button type="button" class="botao-lista-filmes">Lista de Filmes</button>
+  </body>
+</html>
