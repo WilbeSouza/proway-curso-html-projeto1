@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Locadora</title>
     <link rel="icon" type="image/png" href="../2.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
     <!-- Link para voltar à página inicial -->
-    <a href="/homer/homer.html" class="voltar">
+    <a href="../homer/homer.html" class="voltar">
       <img src="../1.png" width="20" alt="Ícone" /> Voltar
     </a>
     <br />
-    <form action="index.html" method="get">
+    <form action="../index.html" method="get">
       <div>
         <label for="campo-nome">Filme</label>
         <input type="text" id="campo-filme" required name="filme" />
       </div>
-      <br>
+      <br />
       <div>
         <label for="campo-genero">Gênero</label>
         <select required name="genero">
@@ -52,7 +52,6 @@
           name="duracao"
           required
         />
-        
       </div>
       
       <div>
@@ -76,12 +75,19 @@
           <label for="campo-postar-nao">Não</label>
         </div>
       </div>
-        <div>
-          <a href="/homer/homer.html">
-          <button type="button" class="botao-cad-filmes">Cadastrar</button>
-        </div>
+      
+      <!-- Botões de ação -->
+      <div>
+        <button type="submit" class="botao-cad-filmes">Cadastrar</button>
+      </div>
+    </form>
 
-      <a href="/Lista-filmes/lista-filmes.html">
+    <div>
+      <a href="../Lista-filmes/lista-filmes.html">
         <button type="button" class="botao-lista-filmes">Lista de Filmes</button>
+      </a>
+    </div>
+
   </body>
 </html>
+
